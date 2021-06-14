@@ -1,0 +1,29 @@
+html
+,body{
+height: 100%;
+}
+.container-fluid{
+  min-height: 100%;
+}
+.btn{
+  text-decoration: none;
+}
+
+.i-colo{
+  color: bf172d;
+}
+
+/* style="color:bf172d" */
+
+a.nav-link{
+  color: rgb(235, 235, 236);
+}
+a.nav-link:hover{
+  background-color: rgb(197, 43, 32);
+  color: white;
+}
+a.nav-link.active{
+  color: rgb(228, 226, 226);
+  background-color: rgb(197, 43, 32);
+  font-weight: bold;
+}

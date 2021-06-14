@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="container">
+<h1 class="text-info my-3 border-bottom text-center">contact
+</h1>
+    <form method='post' actiom='/contact'>
+    {% csrf_token %}
+  <div class="form-group mb-1">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" name='name' aria-describedby="name" placeholder='Enter Your Name'>
+    
+  </div>
+  <div class="form-group mb-1">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" name='email' aria-describedby="emailhelp" placeholder='Enter Your Email'>
+    <div id="emailhelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="form-group">
+    <label for="content">Describe your issue</label>
+    <textarea class="form-control" name="content" id="content" cols="30" rows="5" placeholder='Describe your Message'></textarea>
+  </div>
+  <div class="text-center">
+  <button type="submit" class="btn btn-outline-info text-center my-4">Submit</button>
+  </div>
+</form>
+ </div>
+
+ {% endblock content %}

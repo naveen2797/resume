@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="container">
+<div class='text-center'>
+<img src="{% static 'core/images/content.jpg'%}" class='img-fluid img-thumbnail mt-5' width="270px" height="100px" alt="Images">
+</div>
+<div class='mt-3 text-white text-justify '>
+<h2 class='text-white mt-3'>Hello,</h2>
+<div class='px-4'style='line-height:2rem;'>
+<p style='text-indent:100px' class='mx-3'>I'am<b style='color:yellow'> Rapelly Naveen</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aut neque vero atque quasi expedita fugit nobis accusamus. Corporis eos magni, aliquid placeat quam nisi. Quasi molestiae eveniet exercitationem incidunt nihil fugit? Aliquam maiores recusandae voluptatibus laborum natus vel praesentium id odit, quam, ab rem laudantium. Provident delectus quibusdam praesentium aliquid dignissimos ea ipsum reiciendis cumquevero non et dolorum consequatur saepe aspernatur, harum nulla unde maxime quaerat enim quidem a! Cupiditate fugiat animi dicta  quibusdam iure aut molestiae perspiciatis, quas quae similique doloribus sit voluptatum placeat voluptate dignissimos libero? Sit tempore ipsa enim amet sunt aperiam placeat omnis Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, nobis explicabo? A autem repellat dolores..</p>
+
+</div>
+</div>
+<div class='text-center'>
+<a href="{% url 'contact'%} " class="btn btn-outline-primary my-3 mx-3 text-decoration-none">Hire Me</a>
+<a href="{% url 'contact'%}" class="btn btn-outline-info my-3 text-decoration-none">Contact Me</a> 
+</div>
+</div>
+
+{% endblock content %}
+
+
+
+
